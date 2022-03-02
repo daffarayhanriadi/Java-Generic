@@ -1,10 +1,6 @@
 # Java-Generic
-## Pengenalan Generic
-[Pengenalan Generic](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir/learn/lecture/24071274#overview)
-* `Generic` adalah kemampuan menambahkan `parameter type <>` saat membuat class atau method.
-* Berbeda dengan tipe data yang biasa kita gunakan di class di function/method, `generic` memungkinkan kita bisa mengubah-ubah bentuk tipe data sesuai dengan yang kita mau.
----
-## Manfaat Generic
-* Pengeckean ketika proses kompilasi.
-* Tidak perlu manual menggunakan pengecekan tipe data dan konversi tipe data.
-* Memudahkan programmer membuat kode program yang generic sehingga bisa digunakan oleh berbagai tipe data.
+## Generic Method
+* Generic parameter type tidak hanya bisa digunakan pada class atau interface.
+* Kita juga bisa menggunakan generic parameter type di method.
+* Generic parameter type yang kita deklarasikan di method, hanya bisa diakses di method tersebut, tidak bisa digunakan di luar method.
+* Ini cocok jika kita ingin membuat generic method, tanpa harus mengubah deklarasi class.
