@@ -4,3 +4,4 @@
 * Caranya agar generic object kita menjadi contravariant adalah dengan menggunakan kata kunci (`? super SubClass`).
 * Artinya saat kita membuat object `Contoh<Object>`, maka bisa disubtitusi menjadi `Contoh<? super String>`.
 * Contravariant adalah bisa write dan readm namun perlu berhati-hati ketika melakukan read, terutama jika sampai parent nya punya banyak child.
+  * Hati-hati jika menggunakan Contravariant itu jika di set aman data nya, tapi tidak aman ketika kita melakukan get data nya + mencoba paksa menjadi String
