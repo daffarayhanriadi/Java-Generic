@@ -7,11 +7,13 @@ public class WildcardApp {
 
         print(new MyData<>(100));
         print(new MyData<>("Daffa"));
-        print(new MyData<>(new MultipleConstraintApp().Manager));
+        print(new MyData<>(new MultipleConstraintApp.Manager()));
 
     }
 
     public static void print(MyData<?> myData) {
-        System.out.println(myData.getData());
+//        Object o = myData.getData(); // -> dibuat menjadi persamaan karena jika tidak maka kembalian nya akan '?'
+//        String o = myData.getData(); // Bahaya
+        System.out.println(myData.getData()); // jika ingin print doang, maka print saja.
     }
 }
