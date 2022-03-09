@@ -1,10 +1,9 @@
 # Java-Generic
-## Pengenalan Generic
-[Pengenalan Generic](https://www.udemy.com/course/pemrograman-java-pemula-sampai-mahir/learn/lecture/24071274#overview)
-* `Generic` adalah kemampuan menambahkan `parameter type <>` saat membuat class atau method.
-* Berbeda dengan tipe data yang biasa kita gunakan di class di function/method, `generic` memungkinkan kita bisa mengubah-ubah bentuk tipe data sesuai dengan yang kita mau.
+## Type Erasure
+* `Type erasure` adalah proses pengecekan generic pada saat compile time, dan menghiraukan pengecekan pada saat runtime.
+* `Type erasure` menjadikan informasi generic yang kita buat akan hilang ketika kode program kita telah di compile menjadi binary file.
+* Compiler akan mengubah generic parameter type menjadi tipe Object di **Java**.
 ---
-## Manfaat Generic
-* Pengeckean ketika proses kompilasi.
-* Tidak perlu manual menggunakan pengecekan tipe data dan konversi tipe data.
-* Memudahkan programmer membuat kode program yang generic sehingga bisa digunakan oleh berbagai tipe data.
+## Problem Type Erasure
+* Karena informasi generic hilang ketika sudah menjadi binary file.
+* Oleh karena itu, konversi tipe data generic akan berbahaya jika dilakukan secara tidak bijak.
